@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Menu lateral</title>
+    <link rel="stylesheet" href="Estilos/style-menu.css">
+    <script src="scripts/script-menu.js" defer></script>
+</head>
+<body>
+    <div class="container">
+            <div class="menu">
+                <h1 class="first">Processo</h1>
+                <h1> em </h1>
+                <h1>etapas</h1>
+                <div class="btn-menu">
+                    <input type="button" class="btn"  id="etapa1" value="Etapa 1">
+                    <input type="button" class="btn"  id="etapa2" value="Etapa 2" disabled>
+                    <input type="button" class="btn"  id="etapa3" value="Etapa 3" disabled>
+                    <input type="button" class="btn"  id="etapa4" value="Etapa 4" disabled>
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="top">
+                    <div class="img">
+                        <div class="img-header">
+                            <h1> PROCESSO EM ETAPAS</h1>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meio">
+                    <div id="conteudo-btn1">
+                        <h1 class="titulo">Dados do funcionário - 1 Etapa</h1>
+                        <div class="etapa show" id="Etapa1">
+                            <p>Nome: </p><input type="text" name="txtNome" id="txtNome">
+                            <p>CPF: </p><input type="text" name="txtCPF" id="txtCPF">
+                            <p>Telefone: </p><input type="tel" name="txtTel" id="txtTel">
+                            <p>E-mail: </p><input type="email" name="txtEmail" id="txtEmail">
+                        </div>
+                        <div class="btn-proximo" id="btn-proximo-etapa1">
+                            <p><a href="#"> PRÓXIMO </a></p> <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div id="conteudo-btn2">
+                        <h1 class="titulo">Dados do funcionário - 2 Etapa</h1>
+                        <div class="etapa" id="Etapa2">
+                            <p>Empresa: </p><input type="text" name="txtEmpresa" id="txtEmpresa">
+                            <p>Setor: </p><input type="text" name="txtSetor" id="txtSetor">
+                            <p>Cargo: </p><input type="text" name="txtCargo" id="txtCargo">
+                        </div>
+                        <div class="btn-proximo" id="btn-proximo-etapa2">
+                            <p><a href="#"> PRÓXIMO </a></p> <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div id="conteudo-btn3">,
+                        <h1 class="titulo">Dados do funcionário - 3 Etapa</h1>
+                        <div class="etapa" id="Etapa3">
+                            <p>Supervisor: </p><input type="text" name="txtSup" id="txtSup">
+                            <p>Horario: </p><input type="text" name="txtHorario" id="txtHorario">
+                            <p>Local de trabalho: </p><input type="text" name="txtLocal" id="txtLocal">
+                        </div>
+                        <div class="btn-proximo" id="btn-proximo-etapa3">
+                            <p><a href="#"> PRÓXIMO </a></p> <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                
+                    <div id="conteudo-btn4">
+                        <h1 class="titulo">Verificando dados informados - 4 Etapa</h1>
+                        <div class="etapa" id="Etapa4">
+                            <p class="tipo">Nome:  </p><p class="_nome"></p>             
+                            <p class="tipo">CPF:  </p><p class="_cpf"></p>
+                            <p class="tipo">Telefone:  </p><p class="_tel"></p>         
+                            <p class="tipo">E-mail:  </p><p class="_email"></p>
+                            <p class="tipo">Empresa:  </p><p class="_empresa"></p>
+                            <p class="tipo">Setor:  </p><p class="_setor"></p>           
+                            <p class="tipo">Cargo:  </p><p class="_cargo"></p>
+                            <p class="tipo">Supervisor:  </p><p class="_sup"></p>
+                            <p class="tipo">Horario:  </p><p class="_horario"></p>       
+                            <p class="tipo">Local de trabalho:  </p><p class="_local"></p>
+                        </div>
+                        <div class="btn-proximo" id="btn-proximo-etapa4">
+                            <p><a href="#"> CONCLUÍDO </a></p> <i class="bi bi-check2-square"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bot">
+                    <div class="img">
+                        <h1>Mensagem - Status</h1>
+                        <div class="img-footer"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+</body>
+</html>
